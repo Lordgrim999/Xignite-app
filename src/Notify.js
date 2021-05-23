@@ -31,7 +31,7 @@ const Notify = () => {
       alert("add fileds to subscribe");
     } else {
       axios
-        .post("/api/rates/notify", {
+        .post("/api/rates", {
           username: username,
           email: email,
         })

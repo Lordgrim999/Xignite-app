@@ -17,7 +17,7 @@ router.get("/", (req, res) => {
       console.log(err);
     });
 });
-router.post("/notify", async (req, res) => {
+router.post("/", async (req, res) => {
   const { username, email } = req.body;
   const user = new User({
     name: username,
