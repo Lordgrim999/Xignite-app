@@ -2,7 +2,8 @@ const xignite = require("./xignite");
 const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
-const notifier = require("./notifer");
+const notifier=require('./notifer');
+
 require("dotenv").config();
 const User = require("../models/user");
 
@@ -28,7 +29,7 @@ router.post("/",   (req, res) => {
     console.log("saved");
   
     let mailOptions = {
-      from: "srivastavaak47rishi@gmail.com",
+      from: "Rishi Srivastava",
       to: email,
       subject: "XigniteApp Rate Update",
       html: `<h3>Hey ${username}!!</h3><br/>
@@ -37,8 +38,8 @@ router.post("/",   (req, res) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "srivastavaak47rishi@gmail.com",
-        pass: "Rishi@328",
+        user: "lordgrim9991@gmail.com",
+        pass: "Lordgrim@9628",
       },
     });
   

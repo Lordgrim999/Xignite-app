@@ -8,8 +8,8 @@ exports.addNotifyAll = async () => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "srivastavaak47rishi@gmail.com",
-      pass: "Rishi@328",
+      user: "lordgrim9991@gmail.com",
+      pass: "Lordgrim@9628",
     },
   });
 
@@ -32,7 +32,7 @@ exports.addNotifyAll = async () => {
     description=response.Description.Description;
   }
   let mailOptions = {
-    from: "srivastavaak47rishi@gmail.com",
+    from: "Rishi Srivastava",
     to: emails,
     subject: "XigniteApp Rate Update",
     html: `<b>Type: </b><p>${response.Type}</p>
