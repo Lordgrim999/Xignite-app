@@ -9,7 +9,7 @@ exports.addNotifyAll = async () => {
     service: "gmail",
     auth: {
       user: "lordgrim9991@gmail.com",
-      pass: "Lordgrim@9628",
+      pass: process.env.PASS,
     },
   });
 
