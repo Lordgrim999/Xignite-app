@@ -48,13 +48,13 @@ const RateTable = (props) => {
               <TableCell component="th" scope="row" data-testid="type">
                 {rates.Type}
               </TableCell>
-              <TableCell align="right" data-testid="type">
+              <TableCell align="right" data-testid="date">
                 {rates.Date}
               </TableCell>
-              <TableCell align="right" data-testid="type">
+              <TableCell align="right" data-testid="value">
                 {rates.Value}
               </TableCell>
-              <TableCell align="right" data-testid="type">
+              <TableCell align="right" data-testid="price">
                 {rates.Price}
               </TableCell>
             </TableRow>

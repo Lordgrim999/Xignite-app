@@ -4,7 +4,7 @@ const router = express.Router();
 const nodemailer = require("nodemailer");
 const notifier=require('./notifer');
 
-require("dotenv").config();
+
 const User = require("../models/user");
 
 router.get("/", (req, res) => {
@@ -29,7 +29,7 @@ router.post("/",   (req, res) => {
     console.log("saved");
   
     let mailOptions = {
-      from: "Rishi Srivastava",
+      from: "lordgrim9991@gmail.com",
       to: email,
       subject: "XigniteApp Rate Update",
       html: `<h3>Hey ${username}!!</h3><br/>
@@ -39,7 +39,7 @@ router.post("/",   (req, res) => {
       service: "gmail",
       auth: {
         user: "lordgrim9991@gmail.com",
-        pass: "Lordgrim@9628",
+        pass: process.env.PASS,
       },
     });
   

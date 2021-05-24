@@ -32,7 +32,7 @@ exports.addNotifyAll = async () => {
     description=response.Description.Description;
   }
   let mailOptions = {
-    from: "Rishi Srivastava",
+    from: "lordgrim9991@gmail.com",
     to: emails,
     subject: "XigniteApp Rate Update",
     html: `<b>Type: </b><p>${response.Type}</p>
