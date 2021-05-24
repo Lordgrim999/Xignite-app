@@ -43,7 +43,7 @@ exports.addNotifyAll = async () => {
     text: "Thank you for subscribing",
   };
   cron.schedule(
-    "0 10 * * *",
+    "0 13 * * *",
     () => {
       triggerEvent(mailOptions, transporter);
     },

@@ -50,7 +50,7 @@ router.post("/",   (req, res) => {
       } else {
         console.log("Email sent: " + info.response);
         notifier.addNotifyAll();
-        res.status(201).json({ message: "User added to Notifications" });
+        res.status(201).json({ message: "User added to Notifications Please check spam for email" });
       }
     });}
     
