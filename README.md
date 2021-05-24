@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#The project is hosted on site
+# The project is hosted on site
 https://glacial-cove-79619.herokuapp.com/
 
 
